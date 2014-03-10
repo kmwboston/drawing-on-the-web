@@ -42,9 +42,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Page structure*/
 
+html, body {
+    height:100%;
+}
+
+body {
+	background: black;
+}
 #container {
+	padding-left: 2%;
+	padding-right: 2%;
 	width: 80%;
 	margin: auto;
+	margin-top: -1.5%;
+	height: 100%;
+	background-color:white;
 }
 
 #content {
