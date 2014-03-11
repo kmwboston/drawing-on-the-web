@@ -1,12 +1,5 @@
 /*Text formatting*/
 
-p, ul, ol {
-	color: black;
-	font-family: "Courier New", Courier, monospace;
-	font-size: 1em;
-	line-height: 1.3em;
-	text-align: left;
-}
 
 /*Link states*/
 
@@ -35,33 +28,80 @@ a:active {
 		url('fonts/raleway.svg');
 }
 
+p, ul, ol {
+	color: black;
+	font-family: Raleway, Courier, monospace;
+	font-size: 1em;
+	line-height: 1.2em;
+	text-align: left;
+}
+
 h1, h2, h3, h4, h5, h6 {
+	padding-top: .5em;
+	font-size: 1.6em;
 	font-family: Raleway, Helvetica, sans-serif;
 	font-weight: normal;
 }
 
+.title {
+	font-size: 2em;
+	font-style: bold;
+}
+
 /*Page structure*/
 
-html, body {
-    height:100%;
+body {
+	background-attachment: fixed;
+	background-image: url(../images/coralreef.jpg);
+	background-repeat: repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+
 }
 
-body {
-	background: black;
-}
-#container {
-	padding-left: 2%;
-	padding-right: 2%;
-	width: 80%;
+
+
+#container { 
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 2%;
+	width: 60%;
 	margin: auto;
-	margin-top: -1.5%;
-	height: 100%;
-	background-color:white;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	border: 2px solid #606060;
+	border-radius: 25px;
+	background-attachment: fixed;
+	background-image: url(../images/transparent.png);
+
+
 }
+
+/*#container::before
+{
+    content: "";
+	width: 60%;	
+    position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 5%;
+    z-index: -1;
+    height: 100%;
+    background: #F0F0F0;
+    border: 2px solid #F0F0F0;
+    border-radius: 25px;
+    opacity: .8;
+    
+
+}*/
 
 #content {
 	margin-top: 4em;
-	border-top: 1px solid black;
+	border-top: 1px solid #0066CC;
+	padding-left: .5%;
+	padding-right: .5%;
 }
 
 #footer {
@@ -83,7 +123,7 @@ ul, ol {
 
 li {
 	float: left;
-	padding-right: 2%;
+	padding-right: 4%;
 }
 
 .shift {
